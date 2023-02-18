@@ -104,6 +104,7 @@ const displayPhoneDetail = phone => {
     modalTitle.innerText = phone.name;
     const phoneDetails = document.getElementById('phone-details');
     phoneDetails.innerHTML = `
+    <img src="${phone.image}" class="" alt="...">
     <p>Release Date: ${phone.releaseDate ? phone.releaseDate : 'No Release Date Found '}</p>
     <p>Storage: ${phone.mainFeatures ? phone.mainFeatures.storage : 'No Storage information found'} </p>
     <p>Others:Bluetooth: ${phone.others ? phone.others.Bluetooth : 'No Bluetooth information'}  </p>
