@@ -89,7 +89,7 @@ document.getElementById('btn-show-all').addEventListener('click', function () {
 })
 
 const loadPhoneDetails = async id => {
-    const url = `https://openapi.programming-hero.com/api/phone/api/phone/${id}`;
+    const url = `https://openapi.programming-hero.com/api/phone/${id}`;
     const res = await fetch(url);
     const data = await res.json();
     console.log(data);
